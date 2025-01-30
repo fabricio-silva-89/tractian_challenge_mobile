@@ -1,0 +1,44 @@
+name: tractian_challenge_mobile
+description: "A new Flutter project."
+
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  google_fonts: ^6.2.1
+  dio: ^5.7.0
+  get: ^4.6.6
+  flutter_dotenv: ^5.2.1
+  flutter_native_splash: ^2.4.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/images/1.5x/
+    - assets/images/2.0x/
+    - assets/images/3.0x/
+    - assets/images/4.0x/
+    - .env
+
+flutter_native_splash:
+  color: '#FFFFFF'
+  image: 'assets/images/splash-logo.png'
+  android_12:
+    color: '#FFFFFF'
+    icon_background_color: "#FFFFFF"
+    image: 'assets/images/splash-logo-12.png'
