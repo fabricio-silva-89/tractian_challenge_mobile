@@ -171,35 +171,3 @@ class _AssetsPageState extends State<AssetsPage> with UIMessageMixin {
     return false;
   }
 }
-
-// class CustomFilterChipWidget extends StatelessWidget {
-//   final String label;
-//   final bool selected;
-//   final void Function(bool)? onSelected;
-
-//   const CustomFilterChipWidget({
-//     super.key,
-//     required this.label,
-//     required this.selected,
-//     this.onSelected,
-//   });
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return FilterChip(
-//       avatar: Icon(
-//         Icons.bolt,
-//         color: selected ? AppColors.white : AppColors.bodyText2,
-//       ),
-//       label: Text(
-//         'Sensor de Energia',
-//         style: AppTextStyles.titleSmall.copyWith(
-//           height: 1.4,
-//           color: selected ? AppColors.white : AppColors.bodyText2,
-//         ),
-//       ),
-//       onSelected: onSelected,
-//       selected: selected,
-//     );
-//   }
-// }
