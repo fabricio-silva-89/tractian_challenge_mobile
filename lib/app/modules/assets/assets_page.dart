@@ -75,14 +75,15 @@ class _AssetsPageState extends State<AssetsPage> with UIMessageMixin {
                     ),
                     child: Obx(() {
                       if (controller.nodesMap.isEmpty) return LoadingWidget();
-                      return ListView(
-                        shrinkWrap: true,
-                        cacheExtent: 0,
-                        children: _buildNodes(
-                          'root',
-                          controller.nodesMap,
-                          controller.filterState,
-                        ),
+                      return ListView.builder(
+                        itemCount: controller.nodesMap['root']!.length,
+                        itemBuilder: (_, i) {
+                          return _buildNodes(
+                            'root',
+                            controller.nodesMap,
+                            controller.filterState,
+                          )[i];
+                        },
                       );
                     }),
                   );
